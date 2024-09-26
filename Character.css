@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Bebas;
+    src: url(asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(10px); */
+    padding: 0;
+    gap: 2em;
+
+}
+
+.background{
+    z-index: -1;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    filter: blur(10px);
+    object-fit: cover;
+}
+
+
+.TitlePage{
+    margin-top: 18vh;
+    font-size: 3em;
+    background-color: white;
+    border: 5px solid black;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    transition: 500ms ease;
+}
+
+.SearchBar{
+    width: 35%;
+    height: 7vh;
+    min-height: 50px;
+    padding: 0.2em;
+    font-size: 2em;
+    color: black;
+}
+
+.SearchBar::placeholder{
+    color: grey;
+}
+
+.CharacterContainer{
+    width: 75vw;
+    min-width: 700px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-bottom: 20vh;
+    
+}
+
+.CharacterItemContainer{
+    width: 21.25%;
+    height: 60vh;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    box-sizing: border-box; 
+    transition: 500ms ease;
+}
+
+.CharacterItemImg{
+    width: 100%;
+    height: 70%;
+    /* background-image: url(asset/home/character-card/Naruto.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.CharacterItemName{
+    width: 100%;
+    height: 17%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    transition: 500ms ease;
+}
+
+
+.CharacterBTN{
+    width: 100%;
+    height: 13%;
+    background-color: black;
+    display: flex;
+    color:white;
+    font-size: 1.3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 200ms ease;
+}
+
+.CharacterBTN:hover{
+    background-color: grey;
+}
+
+.PopUpContainer{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    gap:0.5em;
+    visibility: hidden;
+}
+
+.PopUpLeft{
+    flex-direction: column;
+    height: 80vh;
+    width: 20%;
+    display: flex;
+    
+}
+
+.PopUpChar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+#PopUpCharImg{
+    /* width: 100%; */
+    height: 95%;
+}
+
+.PopUpName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black
+}
+
+
+
+
+
+.PopUpRight{
+    height: 80vh;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.PopUpRight > img{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+}
+
+.PopUpDesc{
+    display: flex;
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    z-index: 7;
+    font-size: 1.2em;
+}

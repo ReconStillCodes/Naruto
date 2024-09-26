@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="Home.css">
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="NavigationContainer">
+        <img class="LogoNav" src="asset/naruto-logo.webp" alt="naruto-logo">
+        
+        <div class="BtnContainerNav">
+            <div class="NavBarContainer" id="NavBarContainer">
+                <img src="asset/home/navbar/hamburger-menu-bg.png" alt="Hamburger">
+
+                <div class="NavBarBtnContainer">
+                    <label class="BtnItem" id="NavHomeBtn">HOME</label>
+                    <label class="BtnItem" id="NavCharacterBtn">CHARACTER</label>
+                    <label class="BtnItem" id="NavAnimeBtn">ANIME</label>
+                    <label class="BtnItem" id="NavMangaBtn">MANGA</label>
+                    <label class="BtnItem" id="NavStoryBtn">STORY</label>
+                </div>
+
+            </div>
+
+            <div class="BtnTheme" id="BtnTheme">
+                <div id="BtnThemeCirc" class="BtnThemeCirc"></div>
+                <div id="BtnThemeMoon" class="BtnThemeCirc BtnThemeMoon"></div>
+            </div>
+            
+            <img id="MenuLogo" class="MenuLogo" src="asset/hamburger-menu-logo.png" alt="Menu-Bar">
+        
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <canvas id="Section1"></canvas>
+
+
+    <!-- Story Section -->
+    <div class="Section" id="Section2">
+        <img class="BackgroundImg" id="StoryBackgroundImg" src="asset/bg_story_jp-light.png">
+
+        <div class="ContentSection">
+            <div class="StoryTitleContainer">
+                <img id="StoryTitleImg" class="StoryTitleImg" src="asset/title/story-light.png">
+            </div>
+
+            <div class="StoryContentContainer">
+                <div id="StoryContentWritingContainer" class="StoryContentWritingContainer">
+                    <div id = "StoryContentTitle"  class="StoryContentTitle">NARUTO</div>
+                    <div class="StoryContentDesc"> A powerful fox known as the Nine-Tails attacks the ninja village Konoha. In response, the leader of Konoha -the Fourth Hokage- seals the fox inside his newborn son Naruto Uzumaki at the cost of his life.</div>
+                    <div id="StoryContentButton"  class="StoryContentButton">SHOW MORE</div>
+                </div>
+
+                <div class="StoryContentImgContainer">
+                    <img src="asset/char_naruto.webp">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="LetterContainer">
+            <img id="Letter1" src="asset/letter/letter_n.webp">
+        </div>
+    </div>
+
+
+    <!-- Video Section -->
+     <div class="Section" id="Section3">
+        <video src="asset/home/naruto-sad-video.mp4" loop autoplay muted></video>
+
+        <canvas id="VideoCanvas"></canvas>
+
+        <div class="ContentSection">
+
+            <div class="VideoContentContainer ">
+                <div class="VideoContentDesc" id="VideoContentDesc">The hole in one's heart gets filled by oasdthers around you</div>
+            </div>
+
+        </div>
+
+        <div class="LetterContainer">
+            <img id="Letter2" src="asset/letter/letter_a.webp">
+        </div>
+
+       
+     </div>
+
+
+    <!-- Character Section -->
+    <div class="Section" id="Section4">
+        <img class="BackgroundImg" id="CharacterBackgroundImg" src="asset/bg_comics_jp_light.png">
+
+
+        <div class="ContentSection CharacterContentSection">
+            <div class="StoryTitleContainer CharacterTitleContainer">
+                <img id="CharacterTitleImg" class="StoryTitleImg" src="asset/title/character-light.png">
+            </div>
+
+            <div class="CharacterContentContainer">
+                <div class="CharacterItemContainer">
+                    <div class="CharacterCard" id="CharacterCard1"></div>
+
+                    <div class="CharacterName"><b>NARUTO</b></div>
+
+                    <div class="CharacterBtn">SHOW MORE DETAIL</div>
+                </div>
+
+                <div class="CharacterItemContainer">
+                    <div class="CharacterCard" id="CharacterCard2"></div>
+
+                    <div class="CharacterName"><b>SAKURA</b></div>
+
+                    <div class="CharacterBtn">SHOW MORE DETAIL</div>
+                </div>
+
+                <div class="CharacterItemContainer">
+                    <div class="CharacterCard" id="CharacterCard3"></div>
+
+                    <div class="CharacterName"><b>SASUKE</b></div>
+
+                    <div class="CharacterBtn">SHOW MORE DETAIL</div>
+                </div>
+        
+            </div>
+
+            <div class="CharacterContentBtnContainer">
+                <div class="CharacterContentBtn" id="CharacterContentBtn">
+                    SHOW MORE CHARACTER
+                </div>
+                <!-- SHOW MORE CHARACTER -->
+            </div>
+        </div>
+
+        <div class="LetterContainer">
+            <img id="Letter3" src="asset/letter/letter_r.webp">
+        </div>
+
+    </div>
+
+
+    <!-- Anime Section -->
+    <div class="Section" id="Section5">
+        <img class="BackgroundImg" id="AnimeBackgroundImg" src="asset/home//anime/background-light.png">
+
+
+        <div class="ContentSection CharacterContentSection">
+            <div class="StoryTitleContainer AnimeTitleContainer">
+                <img id="AnimeTitleImg" class="StoryTitleImg" src="asset/title/Anime-light.png">
+            </div>
+
+            <div class="CharacterContentContainer">
+                <div class="CharacterItemContainer">
+                    <div class="CharacterCard AnimeCard" id="AnimeCard1"></div>   
+
+                    <div class="AnimeBtn">CHECK FOR MORE</div>
+                </div>
+
+                <div class="CharacterItemContainer">
+                    <div class="CharacterCard AnimeCard" id="AnimeCard2"></div>   
+
+                    <div class="AnimeBtn">CHECK FOR MORE</div>
+                </div>
+
+                <div class="CharacterItemContainer">
+                    <div class="CharacterCard AnimeCard" id="AnimeCard3"></div>   
+
+                    <div class="AnimeBtn">CHECK FOR MORE</div>
+                </div>
+
+            </div>
+
+
+            <div class="CharacterContentBtnContainer">
+                <div class="CharacterContentBtn" id="AnimeContentBtn">
+                    MORE INFO ON THE ANIME
+                </div>
+             
+            </div>
+        </div>
+
+        <div class="LetterContainer">
+            <img id="Letter4" src="asset/letter/letter_u.webp">
+        </div>
+
+    </div>
+
+
+    <!-- Magnga Section -->
+
+    <div class="Section" id="Section6">
+        <img class="BackgroundImg" id="MangaBackgroundImg" src="asset/home/manga/background-light.png">
+
+
+        <div class="ContentSection MangaContentSection">
+            <div class="MangaContent" id="MangaContent">
+                <div class="MangaBtn" id="MangaBtn">
+                    check out our manga
+                </div>
+            </div>
+        </div>
+
+        <div class="LetterContainer">
+            <img id="Letter5" src="asset/letter/letter_t.webp">
+        </div>
+    </div>
+
+
+    <!-- Gallery Section -->
+     
+    <div class="Section" id="Section7">
+        <img class="BackgroundImg" id="GalleryBackgroundImg" src="asset/bg_others.webp">
+
+        <div class="ContentSection GalleryContentSection">
+            <div class="StoryTitleContainer AnimeTitleContainer">
+                <img id="GalleryTitleImg" class="StoryTitleImg" src="asset/title/gallery-light.png">
+            </div>
+
+            <div class="GalleryContentContainer">
+                <div class="GalleryBook MostFrontPage">
+                </div>
+
+                <div class="GalleryBook">
+
+                    <div id="page1" class="paper">
+                        <div  id="Front1" class="front" onclick="NextPage(1)">
+                           <h2>Gallery Book</h1>
+                            <div class="Front1Desc">
+                                BY ABEL KRISTANTO
+                            </div>
+                        </div>
+
+                        <div class=" back" id="Back1" onclick="PrevPage(1)"></div>  
+                    </div>
+
+
+                    <div id="page2" class="paper">
+                        <div  id="Front2" class="front" onclick="NextPage(2)"></div>
+
+                        <div id="Back2" class=" back"  onclick="PrevPage(2)"></div>  
+                    </div>
+    
+                   
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="LetterContainer">
+            <img id="Letter6" src="asset/letter/letter_o.webp">
+        </div>
+
+    </div>
+
+    <!-- Game -->
+     <canvas id="Game"></canvas>
+    
+    <script src="Home.js"></script>
+    <script src="Nav.js"></script>
+</body>
+</html>

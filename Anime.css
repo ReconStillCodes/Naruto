@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Bebas;
+    src: url(asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(10px); */
+    padding: 0;
+    gap: 0;
+    overflow-x: hidden;
+
+}
+
+#Shower{
+    /* width: 100%;
+    height: 25vh; */
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    background-color: white;
+    transition: 500ms ease;
+}
+
+.TitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    background-color: transparent;
+    font-size: 1.5em;
+    gap: 0.5em;
+    transition: 500ms ease;
+}
+
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    font-size: 3em;
+    background-color: white;
+    border: 2px solid black;
+    transition: 500ms ease;
+}
+
+.Jumbotron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    background-image: url("asset/anime/naruto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 2em;
+    transition: 500ms ease;
+}
+
+.CoverContainer{
+    position: relative;
+    width: 25vh;
+    height: 35vh;
+}
+
+.Cover{
+    position: absolute;
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    top: 0em;
+    filter: grayscale(100%);
+    transition: 500ms ease;
+}
+
+.Cover:hover{
+    box-shadow: 0 0px 20px rgba(255, 255, 255);
+}
+
+.ContentContainer{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+    gap:5em;
+    padding-bottom: 4em;
+    transition: 500ms ease;
+}
+
+.SubContentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 40%;
+}
+
+.Sub2Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: justify;
+    font-size: 1.5em;
+    transition: 500ms ease;
+}
+
+.TitleContent{
+    width: 100%;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    transition: 500ms ease;
+}
+
+#GalleryContainer{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    gap:2%;
+}
+
+.GalleryItem{
+    height: 100%;
+    width: 24%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-image: url(asset/anime/naruto/naruto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 500ms ease;
+}
+
+.InfoContainer{
+    color: white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    gap:0.5em;
+    font-size: 2em;
+    box-sizing: border-box;
+    padding: 0.4em;
+    transition: 500ms ease;
+}
+
+.InfoType{
+    width: 30%;
+}
+
+.InfoDivider{
+    width: 5%;
+}
+
+.InfoValue{
+    width: 60%;
+}
+
+#InfoContainer1{
+    margin-top: 1.5em;
+}
+
+.PopUp{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.ImgPopUp{
+    width: 50%;
+    transform: scale(0);
+    transition: 200ms ease;
+}
+
+.PopUpBtnContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 50vh;
+    width: 10vw;
+}
+
+#PopUpBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 2em;
+    height: auto;
+    width: 50px;
+    height: 50px;
+    transition: 200ms ease;
+}
+
+#PopUpBtn:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+

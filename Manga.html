@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Page</title>
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="Manga.css">
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="NavigationContainer">
+        <img class="LogoNav" src="asset/naruto-logo.webp" alt="naruto-logo">
+        
+        <div class="BtnContainerNav">
+            <div class="NavBarContainer" id="NavBarContainer">
+                <img src="asset/home/navbar/hamburger-menu-bg.png" alt="Hamburger">
+
+                <div class="NavBarBtnContainer">
+                    <label class="BtnItem" id="NavHomeBtn">HOME</label>
+                    <label class="BtnItem" id="NavCharacterBtn">CHARACTER</label>
+                    <label class="BtnItem" id="NavAnimeBtn">ANIME</label>
+                    <label class="BtnItem" id="NavMangaBtn">MANGA</label>
+                    <label class="BtnItem" id="NavStoryBtn">STORY</label>
+                </div>
+
+            </div>
+
+            <div class="BtnTheme" id="BtnTheme">
+                <div id="BtnThemeCirc" class="BtnThemeCirc"></div>
+                <div id="BtnThemeMoon" class="BtnThemeCirc BtnThemeMoon"></div>
+            </div>
+            
+            <img id="MenuLogo" class="MenuLogo" src="asset/hamburger-menu-logo.png" alt="Menu-Bar">
+        
+        </div>
+    </div>
+
+    <!-- Background -->
+    <div class="Background" id="Background">
+        <div class="BackgroundGradient"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="ContentContainer">
+        <div class="InfoContainer">
+            <div class="InfoTitle" id="InfoTitle">Naruto</div>
+
+            <div class="InfoDesc">
+                Author: <span id="InfoAuthor">Masashi Kishimoto</span>
+                <br>
+                Rating: <span id="InfoRating">4.5</span> / 5
+            </div>
+
+            <div id="SeeMoreBtn">See More</div>
+        </div>
+
+
+
+        <div class="MangaContainer">
+            <img id="Cover0" src="asset/manga/naruto-manga.jpg" class="Cover" onclick="mangaSlide(0)">
+
+            <img id="Cover1" src="asset/manga/naruto-shippuden.jpg" class="Cover" onclick="mangaSlide(1)">
+
+            <img id="Cover2" src="asset/manga/boruto.jpg" class="Cover" onclick="mangaSlide(2)">
+        </div>
+    </div>
+
+
+     <!-- Pop Up -->
+    <div class="PopUp" id="PopUp">
+        <div class="ScrollContainer">
+            <div class="ScrollContent">
+                <div class="ScrollTitle"><b>MORE INFORMATION</b></div>
+                <div class="ScrollDesc">
+                    Author : 
+                    <span id="ScrollAuthor">
+                    MASASHI KISHIMOTO</span>
+                </div>
+
+                <div class="ScrollDesc">
+                    Rating: 
+                    <span id="ScrollRating">
+                    4.0</span> / 5
+                </div>
+
+                <div class="ScrollDesc">
+                    Genre : 
+                    <span id="ScrollGenre">Action, Adventure</span>
+                </div>
+
+                <div class="ScrollDesc">
+                    Published Date : 
+                    <span id="ScrollYear">
+                        1999</span>
+                </div>
+
+                <div class="ScrollDesc">
+                    Summary : 
+                    <span id="ScrollSummary">
+                        Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the village's leader.</span>
+                </div>
+            </div>
+
+            <div class="ScrollBtnContainer">
+                <div id="ScrollBtn">X</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Manga.js"></script>
+    <script src="Nav.js"></script>
+</body>
+</html>

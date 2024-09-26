@@ -1,0 +1,531 @@
+@font-face {
+    font-family: Bebas;
+    src: url(asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(10px); */
+    padding: 0;
+    gap: 0;
+    overflow: hidden;
+
+}
+
+/* .background{
+    z-index: -1;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    filter: blur(10px);
+    object-fit: cover;
+} */
+
+#Section1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(98, 197, 204);
+    transition: 500ms ease;
+    margin: 0;
+    /* background-image: url(asset/home/cloud.webp); */
+}
+
+.Section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.BackgroundImg{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    object-fit: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.ContentSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.LetterContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 20%;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.LetterContainer > img{
+    position: absolute;
+    width: 80%;
+    left: 12em;
+    visibility: hidden;
+    transition: 700ms ease;
+}
+
+
+
+.StoryTitleContainer{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+    height: 17vh;
+}
+
+.StoryTitleImg{
+    height: 100%;
+}
+
+.StoryContentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    gap: 0em;
+    
+}
+
+.StoryContentWritingContainer{
+    width: 55%;
+    /* height: 80%; */
+    padding: 1.5em;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    transition: 500ms ease;
+}
+
+.StoryContentImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+}
+
+.StoryContentImgContainer > img{
+    width: 150%;
+}
+
+.StoryContentTitle{
+    width: 100%;
+    font-size: 3em;
+    border-bottom: 2px solid black;
+    transition: 500ms ease;
+}
+
+.StoryContentDesc{
+    width: 100%;
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.StoryContentButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3em;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 0.5em;
+    transition: 500ms ease;
+}
+
+
+#Section3 > video{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+#VideoCanvas{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    /* background-image: url(asset/home/intermission/intermission_1_light.png); */
+}
+
+.VideoContentSection{
+    justify-content: center;
+    flex-direction: row;
+    background-color: aqua;
+    gap: 2em;
+
+    width: 55%;
+    /* height: 80%; */
+    padding: 1.5em;
+    box-sizing: border-box;
+    background-color: white;
+
+    /* justify-content: center; */
+    gap: 1em;
+    transition: 500ms ease;
+}
+
+.VideoContentContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    gap: 0em;
+    
+}
+
+.VideoContentDesc{
+    width: 90%;
+    background-color: white;
+    font-size: 2.5em;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 0.2em;
+    transition: 500ms ease;
+}
+
+.CharacterContentSection{
+    width: 50%;
+    gap: 1em;
+}
+
+.CharacterTitleContainer{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    
+    /* background-color: yellow; */
+}
+
+.CharacterContentContainer{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CharacterItemContainer{
+    width: 27%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.7em;
+    flex-direction: column;
+    transition: 500ms ease;
+}
+
+.CharacterCard{
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#CharacterCard1{
+    background-image: url(asset/home//character-card//Naruto.jpg);
+}
+
+#CharacterCard2{
+    background-image: url(asset/home//character-card/Sakura.jpg);
+}
+
+#CharacterCard3{
+    background-image: url(asset/home//character-card/sasuke.png);
+}
+
+.CharacterName{
+    font-size: 2.5em;
+}
+
+.CharacterBtn{
+    text-align: center;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 1em;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    padding: 0.2em;
+    background-color: white;
+    transition: 500ms ease;
+}
+
+.CharacterBtn:hover{
+    filter: invert();
+}
+
+.CharacterContentBtnContainer{
+    width: 100%;
+    display: flex;
+}
+
+.CharacterContentBtn{
+    width: 27%;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.3em;
+    font-size: 1.3em;
+    transition: 500ms ease;
+}
+
+.CharacterContentBtn:hover{
+    filter: invert();
+}
+
+.AnimeTitleContainer{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.AnimeCard{
+    height: 80%;
+}
+
+.AnimeBtn{
+    text-align: center;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 1em;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    padding: 0.2em;
+    background-color: white;
+    transition: 500ms ease;
+}
+
+.AnimeBtn:hover{
+    filter: invert();
+}
+
+#AnimeCard1{
+    background-image: url(asset/home/anime/naruto-anime.webp);
+}
+
+#AnimeCard2{
+    background-image: url(asset/home/anime/naruto-shippuden-anime.webp);
+}
+
+#AnimeCard3{
+    background-image: url(asset/home/anime/boruto-anime.webp);
+}
+
+.MangaContentSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MangaContent{
+    width: 60%;
+    height: 60%;
+    background-image: url(asset/home/manga/manga.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 5px solid black;
+    transition: 500ms ease;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.MangaBtn{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1.5em;
+    padding: 1em;
+    transition: 500ms ease;
+}
+
+.MangaBtn:hover{
+    filter: invert();
+}
+
+
+.GalleryContentContainer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.GalleryBook{
+    width: 50%;
+    height: 100%;
+    /* border: 5px solid black; */
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.MostFrontPage{
+    border: 5px solid black;
+    background-image: url(asset/book-cover.jpg);
+    z-index: -1;
+}
+
+.paper{
+    /* perspective: 1500px; */
+    
+    width: 100%;
+    min-height: 100%;
+    /* position: relative; */
+    box-sizing: border-box;
+    transform-origin: left;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.front{
+    backface-visibility: hidden;
+}
+
+.back{
+
+    transform: rotateY(90deg);
+}
+
+.front, .back{
+    left:0;
+    top: 0;
+    transform-origin: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    transform-origin: left;
+    transition: 0.5s;
+    /* transition: 0.5s; */
+}
+
+#Front1{
+    left: 0%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 2em;
+    gap: 0.5em;
+}
+
+.Front1Desc{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#Back1{
+    /* left: 50%; */
+    background-image: url(asset/book-cover2.jpg);
+}
+
+#Front2{
+    background-image: url(asset/book-cover3.jpg);
+}
+
+#Back2{
+    background-image: url(asset/book-cover4.jpg);
+}
+
+.flipped > .back,
+.flipped > .front{
+    transform: rotateY(-180deg);
+    /* transform-origin: left; */
+    
+}
+
+.front{
+    z-index: 1;
+}
+
+.back{
+    z-index: 0;
+}
+
+#page1{
+    z-index: 2;
+}
+
+#page2{
+    z-index: 1;
+}
+
+
+#Game{
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    z-index: 2;
+    /* background-color: yellow; */
+    top: 80vh;
+    /* background-image: url(asset/game_asset/naruto/idle/idle0.png); */
+}
+

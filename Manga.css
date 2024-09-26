@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Bebas;
+    src: url(asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face{
+    font-family: Ninja;
+    src:url(asset/ninja_naruto/njnaruto.ttf)
+}
+
+*{
+    font-family: Bebas;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    /* filter: blur(10px); */
+    padding: 0;
+    gap: 0;
+    overflow-x: hidden;
+}
+
+.Background{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(asset/manga/naruto-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(1);
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    transition: 500ms ease;
+}
+
+.BackgroundGradient{
+    width: 100%;
+    min-height: 100vh;
+    background-color: yellow;
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
+}
+
+.ContentContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    /* background-color: yellow; */
+    gap: 3em;
+}
+
+.InfoContainer{
+    width: 30vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.InfoTitle{
+    width: 100%;
+    font-family: Ninja;
+    font-size: 4em;
+    color: orangered;
+    -webkit-text-stroke: 7px black;
+    /* text-decoration: double; */
+    margin-bottom: 0.7em;
+    transition: 500ms ease;
+}
+
+.InfoDesc{
+    width: 100%;
+    color: white;
+    font-size: 2em;
+}
+
+#SeeMoreBtn{
+    width: 40%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.3em;
+    transition: 500ms ease;
+}
+
+#SeeMoreBtn:hover{
+    filter: invert();
+    cursor: pointer;
+}
+
+
+.MangaContainer{
+    width: 35vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    overflow: hidden;
+}
+
+.Cover{
+    position: absolute;
+    width: 150px;
+    transition: 500ms;
+}
+
+.Cover:hover{
+    box-shadow: 0 0px 20px rgba(255, 255, 255);
+}
+
+#Cover0{
+    /* bottom: 30px; */
+    left: 150px;
+    /* transform: scale(1.2); */
+}
+
+#Cover1{
+    left: 330px;
+}
+
+#Cover2{
+    left: 510px;
+}
+
+.PopUp{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScrollContainer{
+    width: 70%;
+    height: 100vh;
+    background-image: url("asset/bg-secondary.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.ScrollContent{
+    width: 50%;
+    height: 40%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.ScrollBtnContainer{
+    width: 7%;
+    height: 40%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    padding: 0.5em;
+}
+
+#ScrollBtn{
+    font-size: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    transition: 200ms ease;
+}
+
+#ScrollBtn:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.ScrollTitle{
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.ScrillDesc{
+    width: 100%;
+}

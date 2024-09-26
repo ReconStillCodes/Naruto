@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Page</title>
+    <link rel="stylesheet" href="Story.css">
+    <link rel="stylesheet" href="Nav.css">
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="NavigationContainer">
+        <img class="LogoNav" src="asset/naruto-logo.webp" alt="naruto-logo">
+        
+        <div class="BtnContainerNav">
+            <div class="NavBarContainer" id="NavBarContainer">
+                <img src="asset/home/navbar/hamburger-menu-bg.png" alt="Hamburger">
+
+                <div class="NavBarBtnContainer">
+                    <label class="BtnItem" id="NavHomeBtn">HOME</label>
+                    <label class="BtnItem" id="NavCharacterBtn">CHARACTER</label>
+                    <label class="BtnItem" id="NavAnimeBtn">ANIME</label>
+                    <label class="BtnItem" id="NavMangaBtn">MANGA</label>
+                    <label class="BtnItem" id="NavStoryBtn">STORY</label>
+                </div>
+
+            </div>
+
+            <div class="BtnTheme" id="BtnTheme">
+                <div id="BtnThemeCirc" class="BtnThemeCirc"></div>
+                <div id="BtnThemeMoon" class="BtnThemeCirc BtnThemeMoon"></div>
+            </div>
+            
+            <img id="MenuLogo" class="MenuLogo" src="asset/hamburger-menu-logo.png" alt="Menu-Bar">
+        
+        </div>
+    </div>
+
+
+    <!-- Background -->
+     <div class="Background">
+        <div class="Scrollable">
+            <div class="Title">STORY</div>
+
+            <div class="Subtitle"><b>NARUTO</b></div>
+
+            <!-- Drow Down -->
+            <div class="ContentContainer" id="ContentContainer"></div>
+        </div>
+     </div>
+
+    <script src="Story.js"></script>
+    <script src="Nav.js"></script>
+</body>
+</html>

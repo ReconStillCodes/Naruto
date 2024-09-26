@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Page</title>
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="Anime.css">
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="NavigationContainer">
+        <img class="LogoNav" src="asset/naruto-logo.webp" alt="naruto-logo">
+        
+        <div class="BtnContainerNav">
+            <div class="NavBarContainer" id="NavBarContainer">
+                <img src="asset/home/navbar/hamburger-menu-bg.png" alt="Hamburger">
+
+                <div class="NavBarBtnContainer">
+                    <label class="BtnItem" id="NavHomeBtn">HOME</label>
+                    <label class="BtnItem" id="NavCharacterBtn">CHARACTER</label>
+                    <label class="BtnItem" id="NavAnimeBtn">ANIME</label>
+                    <label class="BtnItem" id="NavMangaBtn">MANGA</label>
+                    <label class="BtnItem" id="NavStoryBtn">STORY</label>
+                </div>
+
+            </div>
+
+            <div class="BtnTheme" id="BtnTheme">
+                <div id="BtnThemeCirc" class="BtnThemeCirc"></div>
+                <div id="BtnThemeMoon" class="BtnThemeCirc BtnThemeMoon"></div>
+            </div>
+            
+            <img id="MenuLogo" class="MenuLogo" src="asset/hamburger-menu-logo.png" alt="Menu-Bar">
+        
+        </div>
+    </div>
+
+    <canvas id="Shower"></canvas>
+
+    <!-- Title -->
+    <div class="TitleContainer">
+        <b>Discover Our</b>
+        <div class="Title"
+            <b>ANIME</b>
+        </div>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="Jumbotron" id="Jumbotron">
+        <div class="CoverContainer">
+            <img id="Cover0" class="Cover" src="asset/anime/naruto.jpg" onclick="initAnime(0)">
+        </div>
+
+        <div class="CoverContainer">
+            <img id="Cover1" class="Cover" src="asset/anime/naruto-shippuden.jpg" onclick="initAnime(1)">
+        </div>
+
+        <div class="CoverContainer">
+            <img id="Cover2" class="Cover" src="asset/anime/boruto.jpg" onclick="initAnime(2)">
+        </div>
+        
+    </div>
+
+    <!-- Content -->
+    <div class="ContentContainer">
+        <div class="SubContentContainer">
+            <div class="Sub2Container">
+                <div class="TitleContent"><b>Sypnosis</b></div>
+                <p id="sypnosis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repudiandae nobis, ab ea non explicabo perferendis tempore nihil asperiores, inventore doloremque quia aperiam? Alias, adipisci quae unde explicabo similique impedit.</p>
+            </div>
+
+            <div class="Sub2Container">
+                <div class="TitleContent"><b>Gallery</b></div>
+
+                <div id="GalleryContainer">
+                    <div id="GalleryItem0" class="GalleryItem" onclick="popUp(0)"></div>
+
+                    <div id="GalleryItem1" class="GalleryItem" onclick="popUp(1)"></div>
+
+                    <div id="GalleryItem2" class="GalleryItem" onclick="popUp(2)"></div>
+
+                    <div id="GalleryItem3" class="GalleryItem" onclick="popUp(3)"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="SubContentContainer">
+            <div class="InfoContainer" id="InfoContainer1">
+                <div class="InfoType">Author</div>
+                <div class="InfoDivider"><b>:</b></div>
+                <div class="InfoValue" id="Author">Masashi kishimoto</div>
+            </div>
+
+            <div class="InfoContainer">
+                <div class="InfoType">Director</div>
+                <div class="InfoDivider"><b>:</b></div>
+                <div class="InfoValue" id="Director">Masashi kishimoto</div>
+            </div>
+
+            <div class="InfoContainer">
+                <div class="InfoType">Studio</div>
+                <div class="InfoDivider"><b>:</b></div>
+                <div class="InfoValue" id="Studio">Masashi kishimoto</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="PopUp">
+        <div class="PopUpBtnContainer"></div>
+        <img src="asset/anime/naruto/naruto.jpg" class="ImgPopUp" id="ImgPopUp">
+        <div class="PopUpBtnContainer">
+            <div id="PopUpBtn" onclick="closePopUp()">X</div>  
+        </div>
+    </div>
+    
+    <script src="Anime.js"></script>
+    <script src="Nav.js"></script>
+</body>
+</html>

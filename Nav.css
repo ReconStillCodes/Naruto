@@ -1,0 +1,134 @@
+.NavigationContainer{
+    position: fixed;
+    width: 100vw;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2em;
+    /* padding-top: 2vh; */
+    /* padding-right: 0.5em; */
+    justify-content: space-between;
+    min-height: 70px;
+    position: fixed;
+    z-index: 1;
+}
+
+.LogoNav{
+    margin-top: 2vh;
+    height: 85%;
+}
+
+.BtnContainerNav{
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: right;
+    gap: 0.5em;
+    overflow: none;
+}
+
+.MenuLogo{
+    height: 60%;
+    transition: 200ms ease;
+    position: relative;
+    z-index: 3;
+    margin-top: 1vh;
+    margin-right: 1vh;
+}
+
+
+
+
+
+.MenuLogo:hover{
+    height: 70%;
+}
+
+.BtnTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid black;
+    right: 7vw;
+    margin-top: 1vh;
+    overflow: hidden;
+    transition: 500ms ease;
+    /* position: relative;*/
+}
+
+.BtnThemeCirc{
+    width: 7px;
+    height: 7px;
+    /* width: 15px;
+    height: 15px; */
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    transition: 500ms ease;
+}
+
+.BtnTheme:hover{
+    cursor: pointer;
+}
+
+.BtnThemeMoon{
+    width: 15px;
+    height: 15px; 
+    background-color: black;
+    /* left: 7px; */
+    left: 30px;
+    top: -2px;
+    position: relative;
+    z-index: 999;
+}
+
+
+.NavPopUpContainer{
+    background-color: red;
+    filter: blur(0px);
+    z-index:2;
+    min-height: 100vh;
+    min-width: 100%;
+
+}
+
+.NavBarContainer{
+    width: 80%;
+    height: 100%;
+    /* background-color: black; */
+    color: white;
+    position: absolute;
+    top: -100%;
+    display: flex;
+}
+
+.NavBarBtnContainer{
+    width: 100%;
+    background-color: black;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    box-sizing:border-box;
+    padding-right: 12vw;
+    font-size: 2em;
+    gap:2em 
+}
+
+.NavBarContainer > img{
+    filter: brightness(0);
+}
+
+.BtnItem{
+    height: 50%;
+}
+
+.BtnItem:hover{
+    cursor: pointer;
+}
